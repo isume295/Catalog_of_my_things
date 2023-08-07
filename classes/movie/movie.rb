@@ -1,5 +1,5 @@
 require_relative '../item_movie'
-require_relative '../source'
+require_relative 'source'
 
 class Movie < ItemMovie
   attr_accessor :archived

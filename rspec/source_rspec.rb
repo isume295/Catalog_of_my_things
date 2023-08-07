@@ -1,4 +1,4 @@
-require_relative '../classes/source'
+require_relative '../classes/movie/source'
 require_relative '../classes/item_movie'
 
 describe Source do

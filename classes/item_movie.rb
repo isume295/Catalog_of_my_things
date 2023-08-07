@@ -1,5 +1,5 @@
 require 'date'
-require_relative 'source'
+require_relative 'movie/source'
 
 class ItemMovie
   attr_accessor :archived, :source, :publish_date
