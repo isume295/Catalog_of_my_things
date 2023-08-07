@@ -1,8 +1,10 @@
 require 'date'
 
 class ItemMovie
+  attr_accessor :archived
+
   def initialize(publish_date, id = nil)
-    @id = id || random.rand(1..1000)
+    @id = id || Random.rand(1..1000)
     @publish_date = publish_date
   end
 
