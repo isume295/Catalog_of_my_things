@@ -1,8 +1,14 @@
-require 
+class Genre
+  attr_reader :name, :id
 
-class Genre 
-    def initialize(name:, id: nil)
-        @id =|| random.rand(1..1000)
-        @music_albums = []
-    end
+  def initialize(name:, id: nil)
+    @id = id || rand(1..1000)
+    @name = name
+    @items = []
+  end
+
+  def add_item(item)
+    @items << item
+    item.add_genre(self)
+  end
 end
