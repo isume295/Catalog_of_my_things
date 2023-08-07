@@ -1,8 +1,8 @@
 require 'date'
 
 class Item
-    def initialize(id, publish_date)
-        @id = random.rand(1..1000)
+    def initialize(id = nil, publish_date)
+        @id = id || random.rand(1..1000) 
         @publish_date = publish_date
     end
 
