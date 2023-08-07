@@ -1,6 +1,6 @@
 require 'date'
 
-class Item_Movie
+class ItemMovie
   def initialize(publish_date, id = nil)
     @id = id || random.rand(1..1000)
     @publish_date = publish_date
