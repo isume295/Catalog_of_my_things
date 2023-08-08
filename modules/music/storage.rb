@@ -36,3 +36,15 @@ require 'pry'
             music_obj.add_genre(genre_obj)
             @music_albums << music_obj
         end
+    end
+
+    def load_genres
+        genre_hash = []
+        return genre_hash unless File.exist?('data/genres.json')
+    
+        genre_hash = load_file('data/genres.json')
+        genre_hash.each do |genre|
+          genre_obj = Genre.new(name: genre['name'], id: genre['id'])
+          @genres << genre_obj
+        end
+      end
