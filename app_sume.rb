@@ -31,11 +31,10 @@ class App
     when 3
       display_labels
     when 4
-        puts 'Thank you for using this app!'
-        save_and_exit
-    else
       puts 'Thank you for using this app!'
       save_and_exit
+    else
+      puts 'bye'
     end
   end
 

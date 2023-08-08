@@ -28,7 +28,7 @@ module LoadData
 
     book_hash = load_data_from_file(BOOK_FILE_NAME)
     book_hash.each do |book|
-      book_obj = Book.new(book['cover_state'], book['publisher'], book['publish_date'], book['id'] )
+      book_obj = Book.new(book['cover_state'], book['publisher'], book['publish_date'], book['id'])
       label_obj = @label.find { |label| label.title == book['label'] }
       book_obj.add_label(label_obj)
       @books << book_obj
