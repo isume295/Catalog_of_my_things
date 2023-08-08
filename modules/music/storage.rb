@@ -14,3 +14,8 @@ require 'pry'
         save_file('data/music_albums.json', json_data)
     end
 
+    def save_genres
+        json_data = @genres.map(&:to_hash)
+        save_file('data/genres.json', json_data)
+    end
+
