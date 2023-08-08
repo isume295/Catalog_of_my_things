@@ -1,4 +1,4 @@
-require_relative 'game_item'
+require_relative '../game_item'
 require 'date'
 
 class Game < GameItem
