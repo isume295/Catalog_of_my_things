@@ -1,11 +1,13 @@
-require '../item_salim'
+require_relative '../item_salim'
 
 class MusicAlbum < Item
   attr_reader :on_spotify, :publish_date
+  attr_accessor :genre
 
   def initialize(on_spotify:, publish_date:)
     super(publish_date)
     @on_spotify = on_spotify
+    @genre = 'N/A'
   end
 
   def can_be_archived?
