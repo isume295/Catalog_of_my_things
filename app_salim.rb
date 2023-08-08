@@ -3,6 +3,7 @@ require_relative 'classes/music/genre'
 require_relative 'modules/music/addmusic'
 require_relative 'modules/music/displaymusic'
 require_relative 'modules/music/displaygenre'
+require_relative 'modules/music/storage'
 
 class App
   attr_accessor :music_albums
