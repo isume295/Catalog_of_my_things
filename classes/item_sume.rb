@@ -2,7 +2,7 @@ require 'date'
 require_relative 'book/label'
 
 class Item
-  attr_accessor :publish_date, :id, :label, :can_be_archived
+  attr_accessor :publish_date, :id, :label, :can_be_archived, :add_label
 
   def initialize(publish_date, id = nil)
     @id = id || Random.rand(1..1000)
