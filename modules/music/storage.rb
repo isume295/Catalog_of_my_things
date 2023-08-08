@@ -19,3 +19,8 @@ require 'pry'
         save_file('data/genres.json', json_data)
     end
 
+    def load_file(file_name)
+        data = File.read(file_name)
+        JSON.parse(data)
+    end
+
