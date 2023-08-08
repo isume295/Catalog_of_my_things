@@ -14,8 +14,10 @@ class App
   include Storage
 
   def initialize
-    @music_albums = []
     @genres = []
+    @music_albums = []
+    load_genres
+    load_music_albums
   end
 
   def run(option)
