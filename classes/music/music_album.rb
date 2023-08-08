@@ -18,7 +18,7 @@ class MusicAlbum < Item
       'id' => @id,
       'publish_date' => @publish_date,
       'on_spotify' => @on_spotify,
-      'genre' => @genre || ''
+      'genre' => @genre.name || ''
     }
   end
 end
