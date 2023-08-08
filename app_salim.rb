@@ -3,6 +3,7 @@ require_relative 'classes/music/genre'
 require_relative 'modules/music/addmusic'
 require_relative 'modules/music/displaymusic'
 require_relative 'modules/music/displaygenre'
+require_relative 'modules/music/storage'
 
 class App
   attr_accessor :music_albums
@@ -10,10 +11,13 @@ class App
   include AddMusic
   include DisplayMusic
   include DisplayGenres
+  include Storage
 
   def initialize
-    @music_albums = []
     @genres = []
+    @music_albums = []
+    load_genres
+    load_music_albums
   end
 
   def run(option)
@@ -26,8 +30,10 @@ class App
       add_music
     when 4
       puts option
+      save_music
     else
       puts 'Thank you for using this app!'
+      save_music
       exit
     end
   end

@@ -4,10 +4,9 @@ class MusicAlbum < Item
   attr_reader :on_spotify, :publish_date
   attr_accessor :genre
 
-  def initialize(on_spotify:, publish_date:)
-    super(publish_date)
+  def initialize(on_spotify:, publish_date:, id: nil)
+    super(publish_date, id)
     @on_spotify = on_spotify
-    @genre = 'N/A'
   end
 
   def can_be_archived?
@@ -19,7 +18,7 @@ class MusicAlbum < Item
       'id' => @id,
       'publish_date' => @publish_date,
       'on_spotify' => @on_spotify,
-      'genre' => @genre || ''
+      'genre' => @genre.name || ''
     }
   end
 end

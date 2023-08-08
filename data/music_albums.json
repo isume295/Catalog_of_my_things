@@ -1,0 +1,26 @@
+[
+  {
+    "id": 858,
+    "publish_date": "2012/02/03",
+    "on_spotify": true,
+    "genre": "hell"
+  },
+  {
+    "id": 298,
+    "publish_date": "2012/04/05",
+    "on_spotify": true,
+    "genre": "hell"
+  },
+  {
+    "id": 521,
+    "publish_date": "2012/04/05",
+    "on_spotify": false,
+    "genre": "what"
+  },
+  {
+    "id": 224,
+    "publish_date": "2012/04/05",
+    "on_spotify": true,
+    "genre": "who"
+  }
+]
