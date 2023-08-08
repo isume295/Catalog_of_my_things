@@ -1,25 +1,22 @@
 require 'date'
-require_relative 'movie/source'
 
-class ItemMovie
-  attr_accessor :archived, :source, :publish_date
-
+class Item
+  attr_reader :id
 
   def initialize(publish_date, id = nil)
     @id = id || Random.rand(1..1000)
     @publish_date = publish_date
   end
 
-  def add_genre; end
+  def add_genre(genre)
+    @genre = genre
+  end
 
   def add_author; end
 
   def add_label; end
 
-  def add_source(source)
-    @source = source
-    source.items << self unless source.items.include?(self)
-  end
+  def add_source; end
 
   def can_be_archived?
     current_year = Date.today.year
