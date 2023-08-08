@@ -18,3 +18,12 @@ describe MusicAlbum do
         expect(music_album.can_be_archived?).to be(false)
       end
     end
+
+    context 'when on_spotify is false' do
+      subject { described_class.new(publish_date: publish_date, on_spotify: false) }
+      it 'returns false regardless of release year' do
+        expect(subject.can_be_archived?).to be(false)
+      end
+    end
+  end
+end
