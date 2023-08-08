@@ -25,3 +25,16 @@ class Main
     puts '4. - Exit'
   end
 
+  def take_input
+    print 'Enter a number: '
+    option = gets.chomp.to_i
+    while option.nil? || option < 1 || option > 4
+      puts 'Please enter a number between 1 and 4!'
+      print 'Enter a number: '
+      option = gets.chomp.to_i
+    end
+    option
+  end
+end
+
+Main.new
