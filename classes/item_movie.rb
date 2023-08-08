@@ -2,8 +2,8 @@ require 'date'
 require_relative 'movie/source'
 
 class ItemMovie
-  attr_accessor :archived, :source, :publish_date
-
+  attr_accessor :archived, :source, :publish_date, :id
+ 
   def initialize(publish_date, id = nil)
     @id = id || Random.rand(1..1000)
     @publish_date = publish_date
