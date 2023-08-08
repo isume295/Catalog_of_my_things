@@ -17,3 +17,11 @@ class Main
     end
   end
 
+  def display_options
+    puts 'Please choose one of the options: '
+    puts '1. - List all music albums'
+    puts '2. - List all genres'
+    puts '3. - Add a music album'
+    puts '4. - Exit'
+  end
+
