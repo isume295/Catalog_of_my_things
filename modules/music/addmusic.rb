@@ -8,6 +8,12 @@ module AddMusic
     music_album.add_genre(genre)
     puts 'Music album Added Successfully'
   end
+
+  def input_date
+    puts 'Please Enter publish date in following format: yyyy/mm/dd'
+    gets.chomp
+  end
+
   def add_genre
     puts 'Add a genre'
     puts 'Enter Genre Name'
