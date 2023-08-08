@@ -30,8 +30,10 @@ class App
       add_music
     when 4
       puts option
+      save_music
     else
       puts 'Thank you for using this app!'
+      save_music
       exit
     end
   end
