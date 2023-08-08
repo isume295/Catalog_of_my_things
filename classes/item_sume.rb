@@ -2,7 +2,7 @@ require 'date'
 require_relative 'book/label'
 
 class Item
-    attr_accessor :publish_date, :id, :label
+  attr_accessor :publish_date, :id, :label
 
   def initialize(publish_date, id = nil)
     @id = id || Random.rand(1..1000)
@@ -17,7 +17,7 @@ class Item
   def add_label(label)
     @label = label
     @label.add_item(self)
- end
+  end
 
   def add_source; end
 
@@ -31,6 +31,3 @@ class Item
     @archived = true if can_be_archived?
   end
 end
-
-# item = Item.new("2023-08-07")
-# puts item.can_be_archived?
