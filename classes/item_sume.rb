@@ -1,21 +1,23 @@
 require 'date'
+require_relative 'book/label'
 
 class Item
-  attr_reader :id
+  attr_accessor :publish_date, :id, :label
 
   def initialize(publish_date, id = nil)
     @id = id || Random.rand(1..1000)
     @publish_date = publish_date
+    @label = nil
   end
 
-  def add_genre(genre)
-    @genre = genre
-    genre.items << self unless genre.items.include?(self)
-  end
+  def add_genre; end
 
   def add_author; end
 
-  def add_label; end
+  def add_label(label)
+    @label = label
+    @label.add_item(self)
+  end
 
   def add_source; end
 
