@@ -4,10 +4,15 @@ module AddMovie
     silent = input_silent
     movie = Movie.new(publish_date, silent: silent)
     @movies << movie
-    source = add_sources
-    source.add_item(movie)
-    @sources << source
-    puts 'Movie Added Successfully'
+    new_source = add_sources
+    existing_source = @sources.find { |source| source.name == new_source }
+    if existing_source
+      existing_source.add_item(movie)
+    else
+      source = Source.new(new_source)
+      source.add_item(movie)
+      @sources << source
+    end
   end
 
   def input_date
@@ -18,8 +23,7 @@ module AddMovie
   def add_sources
     puts 'Add a source'
     puts 'Enter Source Name'
-    input = gets.chomp
-    Source.new(input)
+    gets.chomp
   end
 
   def input_silent
