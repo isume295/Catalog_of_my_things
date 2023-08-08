@@ -11,6 +11,7 @@ class App
   include AddMusic
   include DisplayMusic
   include DisplayGenres
+  include Storage
 
   def initialize
     @music_albums = []
