@@ -24,3 +24,15 @@ require 'pry'
         JSON.parse(data)
     end
 
+    def load_music_albums
+        music_albums_hash = []
+        return music_albums_hash unless File.exist?('data/music_albums.json')
+
+        music_albums_hash = load_file('data/music_albums.json')
+
+        music_albums_hash.each do |music|
+            music_obj = MusicAlbum.new(publish_date: music['publish_date'] , on_spotify: music['on_spotify'], id: music['id'])
+            genre_obj = @genres.find { |genre| genre.name == music['genre'] }
+            music_obj.add_genre(genre_obj)
+            @music_albums << music_obj
+        end
