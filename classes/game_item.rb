@@ -2,7 +2,7 @@ require 'date'
 
 class GameItem
   def initialize(publish_date, id = nil)
-    @id = id || random.rand(1..1000)
+    @id = id || Random.rand(1..1000)
     @publish_date = publish_date
   end
 
