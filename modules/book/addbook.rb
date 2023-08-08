@@ -5,7 +5,7 @@ module AddBook
     cover_state = input_cover_state
     book = Book.new(cover_state, publisher, publish_date)
     @books << book
-    label = add_label
+    label = add_label(book)
     book.add_label(label)
     puts 'Book album Added Successfully'
     puts 'Press Enter to continue!'
@@ -27,13 +27,13 @@ module AddBook
     gets.chomp
   end
 
-  def add_label
+  def add_label(book)
     puts 'Add a label'
     puts 'Enter Label Color'
     color = gets.chomp
     puts 'Enter Label title'
     title = gets.chomp
-    label = Label.new(color, title)
+    label = Label.new(color, title, book.id)
     @label << label
     label
   end
