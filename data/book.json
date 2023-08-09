@@ -12,5 +12,19 @@
     "publish_date": "2000/10/10",
     "id": 824,
     "label": "light"
+  },
+  {
+    "cover_state": "good",
+    "publisher": "sume",
+    "publish_date": "2000/03/03",
+    "id": 88,
+    "label": "niv"
+  },
+  {
+    "cover_state": "bad",
+    "publisher": "sumi",
+    "publish_date": "2000/03/03",
+    "id": 747,
+    "label": "nice"
   }
 ]
