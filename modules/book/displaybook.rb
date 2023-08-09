@@ -3,8 +3,8 @@ module DisplayBook
     @books.each_with_index do |book, index|
       label_title = book.label ? book.label.title : 'N/A'
       puts "#{index}) Publisher: #{book.publisher}, Publish Date: #{book.publish_date} Lable: #{label_title}"
-      puts 'Press Enter to continue!'
-      gets.chomp
     end
+    puts 'Press Enter to continue!'
+    gets.chomp
   end
 end
