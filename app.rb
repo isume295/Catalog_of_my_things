@@ -4,6 +4,8 @@ require_relative 'classes/book/book'
 require_relative 'classes/book/label'
 require_relative 'classes/music/music_album'
 require_relative 'classes/music/genre'
+require_relative 'classes/games/game'
+require_relative 'classes/games/author'
 require_relative 'modules/modules'
 
 class App
@@ -18,6 +20,8 @@ class App
     @label = []
     @genres = []
     @music_albums = []
+    @games = []
+    @authors = []
     load_collections
   end
 
@@ -29,6 +33,8 @@ class App
       display_all_music_albums
     when 3
       display_all_movies
+    when 4
+      display_all_games
     when 5
       display_all_genres
     when 6
@@ -41,6 +47,8 @@ class App
 
   def run_more_than6(option)
     case option
+    when 7
+      display_all_authors
     when 8
       display_all_sources
     when 9
@@ -49,6 +57,8 @@ class App
       add_music
     when 11
       add_movie
+    when 12
+      add_game
     else
       puts 'Thank you for using this app!'
       save_and_exit
