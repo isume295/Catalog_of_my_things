@@ -1,5 +1,5 @@
 require_relative '../classes/book/label'
-require_relative '../classes/item_sume'
+require_relative '../classes/item'
 
 RSpec.describe Label do
   let(:label_title) { 'Fiction' }

@@ -19,9 +19,11 @@ class Main
 
   def display_options
     puts 'Please choose one of the options: '
-
+    puts '1. - List all books'
     puts '3. - List all movies'
+    puts '6. - List all labels'
     puts '8. - List all sources'
+    puts '9. - Add book'
     puts '11. - Add movie'
     puts '13. - Exit'
   end
