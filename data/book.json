@@ -5,5 +5,12 @@
     "publish_date": "2020/05/05",
     "id": 815,
     "label": "moon"
+  },
+  {
+    "cover_state": "bad",
+    "publisher": "aya",
+    "publish_date": "2000/10/10",
+    "id": 824,
+    "label": "light"
   }
 ]
