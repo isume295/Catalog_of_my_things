@@ -22,6 +22,3 @@ class MusicAlbum < Item
     }
   end
 end
-
-test = MusicAlbum.new(on_spotify: true, publish_date: '2011/08/08')
-puts test.can_be_archived?
