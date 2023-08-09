@@ -6,10 +6,8 @@ CREATE TABLE games (
   author_id INT REFERENCES authors
 (id),
   can_be_archived BOOLEAN,
-  multiplayer BOOLEAN
-(255),
-  last_played DATE
-(255),
+  multiplayer BOOLEAN,
+  last_played DATE,
   PRIMARY KEY
 (id)
 );
