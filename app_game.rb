@@ -7,38 +7,38 @@ require_relative 'modules/game/preservegameauthor'
 require_relative 'modules/game/load_game_author'
 
 class App
-    attr_accessor :games, :author
+  attr_accessor :games, :author
 
-include AddGame
-include DisplayGame
-include DisplayAuthor
-include PreserveGameAuthor
-include LoadGameAuthor
+  include AddGame
+  include DisplayGame
+  include DisplayAuthor
+  include PreserveGameAuthor
+  include LoadGameAuthor
 
-def initialize
+  def initialize
     @games = []
-    @authors=[]
-    load_games
+    @authors = []
     load_authors
-end
+    load_games
+  end
 
-def run(option)
+  def run(option)
     case option
     when 1
-        display_all_games
+      display_all_games
     when 2
-        display_all_authors
+      display_all_authors
     when 3
-        add_game
+      add_game
     else
-        puts 'Thank you for using this app!'
-        save_and_exit
+      puts 'Thank you for using this app!'
+      save_and_exit
     end
-end
+  end
 
-def save_and_exit
+  def save_and_exit
     save_games
     save_author
     exit
-end
+  end
 end
