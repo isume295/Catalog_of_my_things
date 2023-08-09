@@ -14,6 +14,7 @@
 - [📖 Catalog_of_my_things ](#-Catalog_of_my_things-)
   - [🛠 Built With ](#-built-with-)
     - [Key Features ](#key-features-)
+  - [🤯 Walk through video ](#-walk-through-video-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -47,6 +48,14 @@
 - Data Persistence: The application ensures data persistence by storing your catalog data in a JSON file. This allows you to access and manage your catalog across different sessions, ensuring that your data is preserved.
 
 - User-Friendly Interface: The console-based interface provides a straightforward and intuitive user experience. It allows you to navigate through menus, input data, and interact with your catalog using simple commands and prompts
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## Walkthrough video <a name="walk-through"></a>
+
+ [video](https://drive.google.com/drive/folders/1tu1iV5OhJCoaYiN0itku8g648Nc-s61S?usp=sharing).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -91,6 +100,7 @@ To run tests, run the following command:
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- AUTHORS -->
 
