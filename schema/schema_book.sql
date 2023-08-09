@@ -1,3 +1,5 @@
+CREATE DATABASE item;
+
 CREATE TABLE books (
   id INT GENERATED ALWAYS AS IDENTITY,
   publish_date DATE,
