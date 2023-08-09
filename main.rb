@@ -11,8 +11,11 @@ class Main
     loop do
       display_options
       option = take_input
-      @app.run(option)
-
+      if option >= 1 && option < 7
+        @app.run_till6(option)
+      else
+        @app.run_more_than6(option)
+      end
       break if option == 13
     end
   end
@@ -20,10 +23,13 @@ class Main
   def display_options
     puts 'Please choose one of the options: '
     puts '1. - List all books'
+    puts '2. - List all music albums'
     puts '3. - List all movies'
-    puts '6. - List all labels'
-    puts '8. - List all sources'
+    puts "5. - List all genres (e.g 'Comedy', 'Thriller')"
+    puts "6. - List all labels (e.g. 'Gift', 'New')"
+    puts "8. - List all sources (e.g. 'From a friend', 'Online shop')"
     puts '9. - Add book'
+    puts '10. - Add a music album'
     puts '11. - Add movie'
     puts '13. - Exit'
   end
