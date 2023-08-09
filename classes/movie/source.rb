@@ -1,5 +1,3 @@
-require_relative '../item_movie'
-
 class Source
   attr_accessor :name, :id
   attr_reader :items

@@ -1,3 +1,5 @@
+CREATE DATABASE catalogue_of_things;
+
 CREATE TABLE source
 (
     id INT PRIMARY KEY NOT NULL,

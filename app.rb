@@ -24,11 +24,11 @@ class App
 
   def run(option)
     case option
-    when 1
-      display_all_movies
-    when 2
-      display_all_sources
     when 3
+      display_all_movies
+    when 8
+      display_all_sources
+    when 11
       add_movie
     else
       puts 'Thank you for using this app!'
