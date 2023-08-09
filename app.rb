@@ -1,55 +1,52 @@
 require_relative 'classes/movie/movie'
 require_relative 'classes/movie/source'
-require_relative 'modules/movie/addmovie'
-require_relative 'modules/movie/displaymovie'
-require_relative 'modules/movie/displaysources'
-require_relative 'modules/movie/preservemoviesource'
-require_relative 'modules/movie/load_movie_source'
 require_relative 'classes/book/book'
 require_relative 'classes/book/label'
-require_relative 'modules/book/addbook'
-require_relative 'modules/book/displaybook'
-require_relative 'modules/book/displaylabel'
-require_relative 'modules/book/load_book_label'
-require_relative 'modules/book/preservedata'
+require_relative 'classes/music/music_album'
+require_relative 'classes/music/genre'
+require_relative 'modules/modules'
 
 class App
   attr_accessor :movies, :books, :label
 
-  include AddMovie
-  include DisplayMovie
-  include DisplaySources
-  include PreserveMovieSource
-  include LoadMovieSource
-  include AddBook
-  include DisplayBook
-  include DisplayLabel
-  include PreserveData
-  include LoadData
+  include Modules
 
   def initialize
     @movies = []
     @sources = []
     @books = []
     @label = []
-    load_sources
-    load_movies
-    load_labels
-    load_books
+    @genres = []
+    @music_albums = []
+    load_collections
   end
 
-  def run(option)
+  def run_till6(option)
     case option
     when 1
       display_books
+    when 2
+      display_all_music_albums
     when 3
       display_all_movies
+    when 5
+      display_all_genres
     when 6
       display_labels
+    else
+      puts 'Thank you for using this app!'
+      save_and_exit
+    end
+  end
+
+  def run_more_than6(option)
+    case option
     when 8
       display_all_sources
     when 9
       add_book
+    when 10
+      add_music
     when 11
       add_movie
     else
@@ -59,10 +56,7 @@ class App
   end
 
   def save_and_exit
-    save_movies
-    save_source
-    save_book
-    save_label
+    save_collections
     exit
   end
 end
