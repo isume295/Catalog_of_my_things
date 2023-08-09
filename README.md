@@ -1,86 +1,94 @@
-﻿<a name="readme-top"></a>
+﻿<div align="center">
+  <h1>Catalog_of_my_things</h1>
+</div>
+
+
+<a name="readme-top"></a>
+
+
+<!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [🎯 TDD Project](#-tdd-project)
+- [📖 Catalog_of_my_things ](#-school-library-)
   - [🛠 Built With ](#-built-with-)
-    - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
-  - [👋 Show your support ](#-show-your-support-)
-  - [🔭Acknowledgments ](#acknowledgments-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 🎯 TDD Project<a name="about-project"></a>
+# 📖 Catalog_of_my_things <a name="about-project"></a>
 
-In this project it will implement a class with some methods, but do it by doing test-driven development (TDD)
-
-- [ ] New class.
-- [ ] Method that takes one argument, an integer and returns the factorial for that number.
-- [ ] Method that takes one argument, a string and returns the reversed.
-- [ ] Method that takes one argument, an integer return a string.
-- [ ] Tests for all of the methods described above have used TDD.
+> Catalog of my things Project is a Ruby-based console application designed to allows users to organize and store data about their personal catalog of items. With this application, you can easily manage various types of collections, such as books, music albums, movies, or any other items you wish to catalog.
 
 
 
 ## 🛠 Built With <a name="built-with"></a>
 
-### Tech Stack <a name="tech-stack"></a>
-<details>
-  <summary>Ruby</summary>
-</details>
+- Ruby
+- PSQL
 
 <!-- Features -->
-
 ### Key Features <a name="key-features"></a>
-- **Unit tests using Rspec**
-- **Write Rspec unit tests with mocks**
-- **Understand the TDD concept**
+
+- Item Management: Create and view and delete items in your catalog. 
+
+- Data Persistence: The application ensures data persistence by storing your catalog data in a JSON file. This allows you to access and manage your catalog across different sessions, ensuring that your data is preserved.
+
+- User-Friendly Interface: The console-based interface provides a straightforward and intuitive user experience. It allows you to navigate through menus, input data, and interact with your catalog using simple commands and prompts
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-you have to those tools in your local machine.
+In order to run this project you need:
 
-- [ ] Visual Studio Code
+Example command:
+
+```sh
+ Install Ruby
+```
 
 ### Setup
 
-Clone the project.
+Clone this repository to your desired folder:
 
-```bash
-  git clone git@github.com:Salimer/TDD-project.git
+```sh
+  cd my-folder
+  git clone git@github.com:isume295/Catalog_of_my_things.git
+```
+### Usage
+
+To run the project, execute the following command:
+
+```sh
+  ruby main.rb
 ```
 
-Go to the project directory.
+### Run tests
 
-```bash
-  cd TDD-project
+To run tests, run the following command:
+
+```sh
+  rspec spec
 ```
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-<!-- ### Run tests
-
-```test
-No tests here...
-``` 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -88,16 +96,25 @@ No tests here...
 
 ## 👥 Authors <a name="authors"></a>
 
+👤 **Misal Azeem**
+
+- GitHub: [@misalazeem](https://github.com/misalazeem)
+<!-- - LinkedIn: [username](link) -->
+
+👤 **Emmanuel Steven**
+
+- GitHub: [@emmanuelsteven](https://github.com/emmanuelsteven)
+<!-- - LinkedIn: [username](link) -->
+
 👤 **Salim Bamahfoodh**
 
 - GitHub: [@Salimer](https://github.com/Salimer)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/sbamahfoodh)
+<!-- - LinkedIn: [username](link) -->
 
-👤 **Abdul Ali Noori**
+👤 **Sumeya Ibrahim**
 
-- GitHub: [@ab-noori](https://github.com/ab-noori)
-- Twitter: [@AbdulAliNoori4](https://twitter.com/AbdulAliNoori4)
-- LinkedIn: [abdulali-noori](https://www.linkedin.com/in/abdulali-noori)
+- GitHub: [@isume295](https://github.com/isume295)
+<!-- - LinkedIn: [@isume295](https://www.linkedin.com/in/sumeya-ibrahim) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,10 +122,8 @@ No tests here...
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-
-- **#test-driven development (TDD)**
-- **# idea is to write test**
-- **#define what the code are going to write does, and then write the code**
+- [ ] **Use database to store data**
+ 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -116,32 +131,31 @@ No tests here...
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome!
+  Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Salimer/Enumerables/issues).
+  Feel free to check the [issues page](https://github.com/isume295/Catalog_of_my_things/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SUPPORT -->
 
-## 👋 Show your support <a name="support"></a>
+## ⭐️ Show your support <a name="support"></a>
 
-Give a ⭐️ if you like this project!
+  If you like this project, give it a star.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
-## 🔭Acknowledgments <a name="acknowledgements"></a>
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-  I would like to thank Microverse for giving me a wonderful opportunity to work on this project
-  
+ - Thanks to all Microverse community
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
