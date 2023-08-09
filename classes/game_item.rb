@@ -1,6 +1,8 @@
 require 'date'
 
 class GameItem
+
+  attr_accessor :archived, :publish_date, :id, 
   def initialize(publish_date, id = nil)
     @id = id || Random.rand(1..1000)
     @publish_date = publish_date
